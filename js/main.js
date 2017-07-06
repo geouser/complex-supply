@@ -99,9 +99,10 @@ jQuery(document).ready(function($) {
 
 
 
-    $('.reviews-slider').slick({
+    $('.reviews-slider, .range-slider').slick({
         arrows: true,
-        dots: false
+        dots: false,
+        fade: true
     })
 
 
