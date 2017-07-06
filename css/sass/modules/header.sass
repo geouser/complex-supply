@@ -15,12 +15,15 @@
 			text-align: right
 	&__contacts
 		text-align: center
+		& > *
+			margin: 5px 0 
 		span
 			font-weight: 500px
 			font-size: 14px 
 			color: $red  
 		a
 			&[href^="tel"]
+				display: block
 				font-weight: 700
 				font-size: 24px
 		p

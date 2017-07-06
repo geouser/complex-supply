@@ -11,6 +11,10 @@
 	
 	.wrapper
 		text-align: left
+		height: 100%
+		.row
+			height: 100%
+			padding-bottom: 140px  
 	h1
 		margin-bottom: 40px
 		font-size: 44px
@@ -24,53 +28,16 @@
 		& + *
 			margin-top: 70px 
 
-
-.offer--slider
-	height: 590px
-	position: relative
-	background: #3D8EB9
-	@media (max-width: 600px)
-		height: 500px
-
-	.slick-track,
-	.slick-list
-		height: 100%
-
-	.slide
-		+flex ($d:column, $ai:center, $j:center)
-		position: absolute
-		left: 0
-		top: 0
-		width: 100%
-		height: 100%
-		background-position: 50% 50%
-		background-repeat: no-repeat
-		-webkit-background-size: cover
-		-o-background-size: cover
-		background-size: cover
-
-		@media (max-width: 800px)
-			padding: 0 30px
-
-		h1,
-		h2
-			color: #fff
-			font-size: 50px
-			font-weight: 700
-			text-align: center
-
-			@media (max-width: 1200px)
-				font-size: 40px
-
-			@media (max-width: 800px)
-				font-size: 32px
-
-			@media (max-width: 600px)
-				font-size: 30px
-
-		.button
-			margin-top: 16px
-
+.logos
+	background-color: #FFF
+	padding: 0px 17px
+	border-top-left-radius: 8px
+	border-top-right-radius: 8px
+	height: 65px
+	margin-top: -65px   
+	display: flex
+	align-items: center
+	justify-content: space-around   
 
 .characteristics-list
 	color: #FFF
