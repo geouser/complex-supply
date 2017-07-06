@@ -1,0 +1,77 @@
+.contacts-section
+	position: relative
+
+.contacts-block
+	width: 460px
+	background-color: #fff 
+	position: relative
+	z-index: 2
+	padding: 45px 65px
+	text-align: left
+	
+	h2
+		font-size: 23px
+		text-align: center  
+		
+		& + hr
+			border: 0
+			border-top: 2px solid #e3e3e3
+			margin: 30px 0
+			
+.contact-info-list
+	margin-bottom: 80px
+
+	.list-item
+		+flex($ai: flex-start)
+		
+		&:not(:last-child)
+			margin-bottom: 25px 
+		
+		.icon
+			width: 30px
+			
+			img
+				display: block
+				width: auto
+				margin: 6px auto 0
+				max-width: 100%
+		
+		.content
+			width: -webkit-calc(100% - 30px)
+			width: calc(100% - 30px)
+			padding-left: 30px 
+			line-height: 24px
+			
+			a
+				color: inherit
+				
+				&:hover
+					text-decoration: underline
+			
+			address
+				font-style: normal
+				
+			.contact-phone
+				font-weight: 700
+				font-size: 23px  
+				
+				& + small
+					display: block 
+					color: $blue
+					font-size: 12px 
+
+
+
+
+
+.map
+	z-index: 1
+	position: absolute!important
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0  
+	
+	.gm-style a img,
+	.gmnoprint
+		display: none!important

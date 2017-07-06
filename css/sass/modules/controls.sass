@@ -1,24 +1,34 @@
 .button 
-	background-color: peru
-	width: 180px
-	height: 60px
-	line-height: 60px
+	background-color: $red
+	width: 100%
+	height: 55px
+	line-height: 55px
 	text-align: center
-	text-transform: uppercase
 	color: #fff
 	font-weight: 500
-	font-size: 16px
+	font-size: 18px
 	display: inline-block
 	border: none
 	cursor: pointer
+	border-radius: 30px
+	-webkit-transition: all 0.3s ease 
+	-moz-transition: all 0.3s ease 
+	-ms-transition: all 0.3s ease 
+	-o-transition: all 0.3s ease 
+	transition: all 0.3s ease 
+	
+	&:hover
+		background-color: $yellow
 
 	&:disabled
 		opacity: 0.5
-
-	@media (max-width: 1500px) 
-		width: 160px
-		height: 50px
-		line-height: 50px
+		
+	&--shadow
+		box-shadow: 0px 7px 29.44px 2.56px rgba(228, 39, 45, 0.52);
+		
+	&--big
+		height: 60px
+		font-size: 20px
 
 /* ------------------------------------ */
 /*  SLICK ARROWS  */

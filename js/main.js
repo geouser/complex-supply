@@ -167,7 +167,7 @@ jQuery(document).ready(function($) {
 
         var mapOptions = {
             center: mapCenterCoord,
-            zoom: 16,
+            zoom: 10,
             //draggable: false,
             disableDefaultUI: true,
             scrollwheel: false,
