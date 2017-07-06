@@ -1,0 +1,71 @@
+.scheme-list
+	text-align: center
+	position: relative
+	
+	&__title
+		padding: 0 75px
+		font-size: 18px
+		height: 75px
+		line-height: 22px
+	
+	@media (min-width: 1200px)
+		&.blue:after
+			content: ''
+			width: 1px
+			height: 100%
+			position: absolute
+			top: 0
+			bottom: 0
+			right: -15px  
+			background-color: #D4D4D4 
+	
+	&.blue &__title
+			color: $blue
+	
+	&.green &__title
+			color: $green
+			
+
+	&__content
+		.item
+			+flex($ai: center)
+			
+			&:not(:last-child)
+				margin-bottom: 30px 
+				
+			@media (min-width: 1200px)
+				@for $i from 1 through 5
+					&:nth-child(#{$i})
+				    	padding-left: (35px * $i) - 35px
+			
+			&-icon
+				width: 100px
+				
+				img
+					display: block
+					margin: 0 auto
+					
+			&-content
+				padding: 0 15px
+				width: -webkit-calc(100% - 100px)
+				width: calc(100% - 100px)
+				text-align: left
+				
+	@media (min-width: 1200px)
+		&.blue &__content
+			padding-right: 75px 
+			
+			.item-icon img
+				filter: drop-shadow(0px 10px 10px $blue)
+		
+		&.green &__content
+			padding-left: 75px 
+			
+			.item-icon img
+				filter: drop-shadow(0px 10px 10px $green)
+
+
+.scheme-after
+	font-size: 22px
+	font-weight: 500
+	margin-top: 70px   
