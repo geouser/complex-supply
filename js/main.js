@@ -98,6 +98,13 @@ jQuery(document).ready(function($) {
     })
 
 
+
+    $('.reviews-slider').slick({
+        arrows: true,
+        dots: false
+    })
+
+
     /*---------------------------
                                   Fancybox
     ---------------------------*/
