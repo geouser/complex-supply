@@ -1,10 +1,17 @@
 .header
 	+position(absolute, 0, 0, auto, 0)
 	+transition(all, .4s)
-	
+	z-index: 100 
 	padding: 8px 0 
 	color: #FFF
-	
+	@media (max-width: 1200px)
+		position: fixed
+		height: 50%
+		background-color: #0088D2 
+		box-shadow: 0 0 10px rgba(0,0,0,.6)
+		transform: translateY(-100%)   
+		&.open
+			transform: translateY(0%)   
 	.wrapper
 		height: 100%
 
@@ -20,17 +27,26 @@
 		span
 			font-weight: 500px
 			font-size: 14px 
-			color: $red  
+			color: $red 
+			@media (max-width: 1200px)
+				 color: #94C63B 
 		a
 			&[href^="tel"]
 				display: block
 				font-weight: 700
 				font-size: 24px
+				@media (max-width: 599px)
+					font-size: 20px 
 		p
 			a
 			 	font-weight: 500
 			 	color: #FFF  
 				  
+.logo
+	@media (max-width: 1200px)
+		display: block
+		margin: 0 auto
+		text-align: center 
 
 /* ------------------------------------ */
 /*  NAV STYLES  */
@@ -43,13 +59,20 @@
 			display: inline-block
 			vertical-align: middle
 			margin: 0 8px
+			@media (max-width: 1200px)
+				margin: 10px
+			@media (max-width: 599px)
+				margin: 6px  
 			a
 				color: #fff
 				font-weight: 500
 				transition: all .2s 
+				display: inline-block
 				&.active,
 				&:hover
-					color: #0088D2 
+					color: #0088D2
+					@media (max-width: 1200px)
+						color: #94C63B 
 
 /* ------------------------------------ */
 /*  MENU BUTTON  */
@@ -70,3 +93,6 @@
 	transition: .5s ease-in-out
 	cursor: pointer
 	display: none
+	@media (max-width: 1200px)
+		display: block
+		z-index: 101 
