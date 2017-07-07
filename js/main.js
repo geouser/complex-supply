@@ -95,7 +95,16 @@ jQuery(document).ready(function($) {
         dots: false,
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+        responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                arrows: false,
+                dots: true
+              }
+            }
+        ]
     })
 
 
@@ -109,7 +118,16 @@ jQuery(document).ready(function($) {
     $('.reviews-slider').slick({
         arrows: true,
         dots: false,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                arrows: false,
+                dots: true
+              }
+            }
+        ]
     })
 
     $('.range-slider').slick({

@@ -3,15 +3,26 @@
 
 .contacts-block
 	width: 460px
+	max-width: 100% 
 	background-color: #fff 
 	position: relative
 	z-index: 2
 	padding: 45px 65px
 	text-align: left
 	
+	
+	@media (max-width: 991px)
+		margin: 0 auto
+	
+	@media (max-width: 599px)
+		padding: 45px 0
+	
 	h2
 		font-size: 23px
 		text-align: center  
+		
+		@media (max-width: 599px)
+			font-size: 20px
 		
 		& + hr
 			border: 0
@@ -74,6 +85,10 @@
 	left: 0
 	right: 0
 	bottom: 0  
+	
+	@media (max-width: 991px)
+		position: relative!important
+		height: 300px
 	
 	.gm-style a img,
 	.gmnoprint
