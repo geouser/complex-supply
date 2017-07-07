@@ -74,6 +74,7 @@ jQuery(document).ready(function($) {
             scrollTop: $($(this).attr('href')).offset().top - 50
         }, 800);
         $('.header').removeClass('open');
+        $('.js-toggle-menu').removeClass('is-active');
         return false;
     });
 
