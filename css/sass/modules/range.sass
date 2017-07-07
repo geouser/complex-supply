@@ -37,6 +37,7 @@
         
     &__opt
         margin-bottom: 40px 
+        padding-top: 40px 
         &__item
             display: inline-block
             vertical-align: middle
@@ -88,6 +89,7 @@
 .rounded-img
     border-radius: 16px
     overflow: hidden 
+    box-shadow: 0px 8px 38px 0px rgba(140, 140, 140, 0.26)
 
 .check-list
     list-style-type: none
@@ -162,3 +164,47 @@
     background-image: url("../images/factory.jpg")
     background-size: cover
     background-position: 50% 50%  
+    
+.pagingInfo
+    font-size: 18px
+    color: #3A3A3A
+    font-weight: 700
+    text-align: right 
+    display: block
+    width: 945px
+    max-width: 100%
+    margin: 0 auto
+    position: relative
+    bottom: -40px
+    z-index: 10
+    padding-right: 40px     
+    
+.counters
+    display: inline-block
+    vertical-align: middle
+    padding: 0 18px
+    
+.slider-prev
+    width: 19px
+    height: 19px
+    background: #DBDBDB
+    border-radius: 50%
+    display: inline-block
+    vertical-align: middle
+    transition: all .2s 
+    cursor: pointer
+    &:hover
+        background-color: $blue
+
+
+.slider-next
+    width: 19px
+    height: 19px
+    background: #DBDBDB
+    border-radius: 50%
+    display: inline-block
+    vertical-align: middle
+    transition: all .2s 
+    cursor: pointer
+    &:hover
+        background-color: $blue 

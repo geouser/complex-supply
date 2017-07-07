@@ -98,12 +98,25 @@ jQuery(document).ready(function($) {
     })
 
 
+    var $status = $('.pagingInfo .counters');
+    $('.range-slider').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    });
 
     $('.reviews-slider, .range-slider').slick({
         arrows: true,
         dots: false,
         fade: true
     })
+
+    $('.slider-next').click(function(){
+        $('.range-slider').slick('slickNext');
+    });
+    $('.slider-prev').click(function(){
+        $('.range-slider').slick('slickPrev');
+    });
 
 
     /*---------------------------
