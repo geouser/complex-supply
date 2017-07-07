@@ -25,9 +25,11 @@
 	@media (max-width: 1200px)
 		position: fixed
 		height: 50%
+		min-height: 400px
+		overflow: scroll 
 		background-color: #0088D2 
 		box-shadow: 0 0 10px rgba(0,0,0,.6)
-		transform: translateY(-100%)   
+		transform: translateY(-110%)   
 		&.open
 			transform: translateY(0%)   
 	.wrapper
@@ -81,6 +83,8 @@
 /*  NAV STYLES  */
 
 .page-menu
+	@media (max-width: 1200px)
+		margin: 20px 0 
 	ul
 		list-style-type: none
 
