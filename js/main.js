@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
     $(function() { 
         var $document = $(document),
             $element = $('.toggle-menu'),
-            $element2 = $('header'),
+            $element2 = $('.header'),
             className = 'hasScrolled';
 
         $document.scroll(function() {
@@ -69,10 +69,11 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                 PAGE ANCHORS
     ---------------------------*/
-    $('.mainNav a, .anchor').click(function() {
+    $('.page-menu a, .anchor').click(function() {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 50
         }, 800);
+        $('.header').removeClass('open');
         return false;
     });
 
