@@ -106,11 +106,27 @@ jQuery(document).ready(function($) {
         $status.text(i + '/' + slick.slideCount);
     });
 
-    $('.reviews-slider, .range-slider').slick({
+    $('.reviews-slider').slick({
         arrows: true,
         dots: false,
         fade: true
     })
+
+    $('.range-slider').slick({
+        arrows: true,
+        dots: false,
+        fade: true,
+        responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            arrows:false,
+            dots: true
+          }
+        }
+        ]
+    })
+
 
     $('.slider-next').click(function(){
         $('.range-slider').slick('slickNext');
