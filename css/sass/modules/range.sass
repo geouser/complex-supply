@@ -148,8 +148,12 @@
     justify-content: space-between 
     margin-top: 80px 
     flex-wrap: wrap   
-    @media (max-width: 991px)
-        justify-content: center           
+    @media (max-width: 1199px)
+        justify-content: center
+
+    @media (max-width: 400px)
+        align-items: stretch
+        
     &__title
         margin-bottom: 45px
         font-size: 20px
@@ -166,27 +170,47 @@
     height: 160px
     background-color: #FFF 
     border-radius: 8px  
-    font-size: 10px
-    line-height: 20px
+    font-size: 12px
+    line-height: 18px
     margin: 4px 0
+    padding-top: 20px 
+    
+    @media (max-width: 1199px)
+        margin: 4px
+    
     @media (max-width: 991px)
-        margin: 10px  
+        margin: 10px
+        
+    @media (max-width: 400px)
+        margin: 5px
+        width: -webkit-calc(50% - 10px)
+        width: calc(50% - 10px)
+        height: auto
+        padding: 20px 0
+        font-size: 11px
+        line-height: normal
+    
+    
     div
         display: inline-block
         vertical-align: middle
         max-width: 98% 
         padding: 0 6px 
-    &:before
+    /*&:before
         display: inline-block
         vertical-align: middle
         content: ''
         height: 100%
-        margin-left: -2px 
+        margin-left: -2px */
     i
         display: block
         height: 45px
         margin: 0 auto 25px
         text-align: center
+        
+        @media (max-width: 400px)
+            margin-bottom: 15px
+            
         img
             max-height: 100%
             display: inline-block
